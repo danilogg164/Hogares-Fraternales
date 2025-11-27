@@ -1,0 +1,156 @@
+/* help.css — Estilos mejorados para help.html
+    Paleta: naranja pastel suave, tipografía legible y botones modernos
+*/
+:root{
+    --bg: #fff7f2; /* naranja pastel aún más suave */
+    --card: #fff8f2; /* tarjetas */
+    --accent: #ff8a50; /* naranja principal */
+    --accent-dark: #ff7043;
+    --muted: #7a4a00;
+    --text: #333;
+}
+:root{
+    --bg: #fff8f4; /* naranja pastel aún más suave */
+    --card: #fff8f2; /* tarjetas */
+    --accent: #ff8a50; /* naranja principal */
+    --accent-dark: #ff7043;
+    --muted: #7a4a00;
+    --text: #333;
+}
+
+/* Reset ligero */
+*{box-sizing:border-box}
+.img_asilo{
+    display:flex;
+    justify-content:flex-start;
+    gap:18px;
+    flex-wrap:nowrap; /* mantener en fila horizontal */
+    overflow-x:auto; /* permitir scroll horizontal en pantallas pequeñas */
+    -webkit-overflow-scrolling:touch;
+    scroll-snap-type:x proximity;
+    margin-bottom:18px;
+    padding:8px 6px;
+}
+html,body{height:100%;margin:0}
+body{
+    font-family: 'Nunito', 'Segoe UI', Roboto, Arial, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+.img_ayuda_del_asilo{
+    width: clamp(240px, 30vw, 520px);
+    min-width: 220px;
+    flex: 0 0 auto; /* evitar que se reduzcan */
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+    transition: transform 260ms ease, box-shadow 260ms ease;
+    scroll-snap-align:center;
+}
+header{
+    text-align:center;
+.img_ayuda_del_asilo:hover{
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+    background: linear-gradient(90deg, rgba(255,138,80,0.95), rgba(255,149,100,0.9));
+    color:#fff;
+}
+header h1{font-size:2.2rem;margin:0 0 8px}
+header .intro{font-size:1.05rem;opacity:0.95;margin:0 auto;max-width:920px}
+@media (max-width:900px){
+    .img_ayuda_del_asilo{width: clamp(200px, 34vw, 380px); min-width:160px}
+    header{padding:48px 12px}
+    header h1{font-size:1.7rem}
+}
+
+main, section{max-width:1100px;margin:22px auto;padding:0 16px}
+
+/* Contenedor de imágenes */
+.img_asilo{
+@media (max-width:600px){
+    .img_asilo{gap:12px;padding:6px}
+    .img_ayuda_del_asilo{width: clamp(160px, 48vw, 280px); min-width:140px}
+    .apoyo-lista,.ubicacion,.donativo{padding:14px;border-radius:10px}
+    .btn-regreso{padding:10px 16px}
+}
+    display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:18px
+}
+.img_ayuda_del_asilo{
+    width: clamp(160px, 30vw, 420px);
+    aspect-ratio: 16/10;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    transition: transform 260ms ease, box-shadow 260ms ease;
+}
+.img_ayuda_del_asilo:hover{
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+/* Tarjeta principal de apoyo */
+.apoyo-lista{
+    background:var(--card);
+    border-radius:14px;padding:20px;margin:0 auto 18px;max-width:820px;box-shadow:0 8px 24px rgba(0,0,0,0.06);
+}
+.apoyo-lista h2{color:var(--accent-dark);margin-top:0}
+.apoyo-lista p{margin:8px 0 12px}
+.apoyo-lista ul{list-style:disc inside;margin:0;padding-left:16px;text-align:left}
+.apoyo-lista li{margin:8px 0;font-size:1.05rem}
+.difusion{font-style:italic;color:var(--muted);margin-top:10px}
+
+/* Ubicación y donativo */
+.ubicacion,.donativo{
+    background:#fff3e6;border-left:6px solid var(--accent);margin:18px auto;padding:16px;border-radius:12px;max-width:820px;box-shadow:0 6px 18px rgba(0,0,0,0.04);
+}
+.ubicacion h3,.donativo h3{margin:0 0 6px;color:var(--accent-dark)}
+.banco{font-size:1.05rem;margin-top:6px}
+
+/* Botón de regreso y anclas */
+.ancla_regreso{display:flex;justify-content:center;margin:30px 0}
+.btn-regreso{display:inline-flex;align-items:center;gap:10px;padding:12px 22px;border-radius:999px;background:linear-gradient(90deg,var(--accent-dark),var(--accent));color:white;text-decoration:none;font-weight:700;box-shadow:0 12px 26px rgba(255,112,67,0.12);transition:transform .18s ease,box-shadow .18s ease;
+}
+.btn-regreso:hover{transform:translateY(-3px);box-shadow:0 22px 40px rgba(255,112,67,0.14)}
+
+/* Footer */
+footer{background:#263745;color:#fff;text-align:center;padding:22px;border-radius:8px;margin:28px 16px}
+
+/* Responsive */
+@media (max-width:900px){
+    .img_ayuda_del_asilo{width:140px;height:100px}
+    header{padding:48px 12px}
+    header h1{font-size:1.7rem}
+}
+
+@media (max-width:600px){
+    .img_ayuda_del_asilo{width:110px;height:80px}
+    .apoyo-lista,.ubicacion,.donativo{padding:14px;border-radius:10px}
+    .btn-regreso{padding:10px 16px}
+}
+
+a.btn-regreso:focus{outline:3px solid rgba(255,138,80,0.18);outline-offset:4px}
+
+h1{margin:0}
+
+p{
+    font-family: monospace;
+    font-size: 17px;
+}
+/*Boton de ubicación google maps*/
+.ubicacion-google{
+  display: inline-block;
+  background: #0e7d81;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: background 0.2s;
+  margin-top: 18px;
+}

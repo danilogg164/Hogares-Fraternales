@@ -1,0 +1,92 @@
+.aviso-donacion {
+    background: #ffe0b2;
+    border-left: 6px solid #ff7043;
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 18px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    color: #7a4a00;
+    font-size: 1.08em;
+}
+
+.ancla_regreso {
+    margin: 30px 0 10px 0;
+}
+.ancla_regreso a {
+    display: inline-block;
+    background: #ff7043;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s;
+}
+.ancla_regreso a:hover {
+    background: #e64a19;
+}
+body {
+    background-color: #f2c293;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+h1{
+    color: white;
+}
+h2{
+    color: #333;
+}
+header {
+    background:  linear-gradient(90deg, rgba(255,138,80,0.95), rgba(255,149,100,0.9));
+    font-size: 25px;
+   text-align: center;
+   padding:0px 20px 0px 0px;
+}
+
+section {
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 600px;
+    background: #fff8f2;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 400px;
+}
+ul li {
+    background: #fbeee0;
+    margin: 10px 0;
+    padding: 15px 10px;
+    border-radius: 10px;
+    font-size: 1.1em;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    text-align: left;
+}
+p {
+    text-align: center;
+}
+
+footer {
+     background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+}
+.donativo{
+     background:#fff3e6;border-left:6px solid var(--accent);margin:18px auto;padding:16px;border-radius:12px;max-width:820px;box-shadow:0 6px 18px rgba(0,0,0,0.04);
+}
+p{
+    font-family: monospace;
+    font-size: 17px;
+}
